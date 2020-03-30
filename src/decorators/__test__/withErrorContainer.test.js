@@ -16,7 +16,6 @@ describe('ErrorContainer component', () => {
     expect(container.toJSON()).toMatchSnapshot();
   });
 
-
   it('should display children with no error provided', () => {
     const { getByText } = render(<EhancedComponent />);
     expect(getByText(testMessage)).toBeInTheDocument();

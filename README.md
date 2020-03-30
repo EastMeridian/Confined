@@ -72,6 +72,8 @@ export default {
 ```
 nous pouvons ajouter de nouveaux vidget component dans vidgets/component, l'inscription est dans vidgets/componentRegister (inscription avec React.lazy);
 
+adapter est la fonction qui permet de transformer les datas reçu pour les adapter au vidget en question. Nous n'allons pas les stocker dans le store redux mais dans un singleton: adapterManager.
+
 A noter que pour améliorer le coté framework, nous pourrions utiliser webpack pour aller chercher directement les entities et components dans les dossiers sans devoir les inscrire a chaque fois;
 
 ## Structure du projet
@@ -103,10 +105,27 @@ A noter que le système de vidget a besoin d'un store externe pour les fonctions
 
 ```javascript
 // flux/vidgetTransform.js
+// action juste avant la réhydration du store
 (outboundState, key) => {
     if (key === 'vidgetReducer') adapterManager.rehydrate(outboundState);
     return { ...outboundState, mySet: new Set(outboundState.mySet || []) };
   }
 ```
+## screens
+Un dossier ou mettre nos screens, nos "smart component".
+
+## hooks
+Quelques custom hooks...
+
+## styles 
+Un endroit ou mettre les styles et colors commun.
+
+## utils
+le dossier de functions utilitaires.
+
+
+## Unit testing
+En raison du temps limité que j'ai eu pour creer ce repo, la couverture est relativement faible, j'ai unit test le maximum d'objet/fonction différentes.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
