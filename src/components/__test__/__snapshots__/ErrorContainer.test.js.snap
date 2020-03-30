@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorContainer component should matches the snapshot 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100%",
+      "justifyContent": "center",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+>
+  <img
+    alt="empty_result"
+    src="test"
+    style={
+      Object {
+        "filter": "blur(2px)",
+        "objectFit": "contain",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  />
+  <span
+    style={
+      Object {
+        "color": "white",
+        "fontFamily": "Roboto",
+        "position": "absolute",
+      }
+    }
+  >
+    Error Message
+  </span>
+</div>
+`;

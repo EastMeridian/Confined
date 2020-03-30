@@ -1,0 +1,3 @@
+export const ADD_VIDGET = 'ADD_VIDGET';
+export const REMOVE_VIDGET = 'REMOVE_VIDGET';
+export const REMOVE_VIDGET_ID = 'REMOVE_VIDGET_ID';

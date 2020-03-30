@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VidgetProvider Component should match the snapshot 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 4,
+      }
+    }
+  >
+    <button
+      aria-label="delete"
+      className="MuiButtonBase-root MuiIconButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "color": "#9E9E9B",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>,
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <style>
+       .spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #FD1708;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+    </style>
+    <div
+      className="spinner"
+    >
+      <div
+        className="dot1"
+      />
+      <div
+        className="dot2"
+      />
+    </div>
+  </div>,
+]
+`;
