@@ -18,8 +18,12 @@ npm start
 
 ### components
 Les composants UI du projet, les briques UI de bases.
+A noter qu'ils peuvent importer 'styles', et de ce fait sont couplés avec ce dossier, pour un découplage optimal dans le but par example de creer une libraire, nous pourrions inclure styles dans component, et mieux, creer un ThemeContext.
 ### decorators
-
+Les decorateur du projet, a utiliser pour enrichir un component
+```javascript
+const EhancedComponent = withStuff(Component);
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
