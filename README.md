@@ -14,8 +14,8 @@ cd Confined && npm i
 npm start
 ```
 
-## Le système de widgets
-L'idée ici était de proposer un (super) mini framework de création de widgets,
+## Le système de vidgets
+L'idée ici était de proposer un (vraiment) mini framework de création de vidgets,
 pour ajouter un vidget il suffit de creer un object dans vidgets/entities/ puis de l'inscrire dans vidgets/entityRegister;
 
 examples de vidgets:
