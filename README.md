@@ -125,7 +125,11 @@ le dossier de functions utilitaires.
 
 
 ## Unit testing
-En raison du temps limité que j'ai eu pour creer ce repo, la couverture est relativement faible, j'ai unit test le maximum d'objet/fonction différentes.
+En raison du temps limité que j'ai eu pour creer ce repo, la couverture est relativement faible, j'ai unit test le maximum d'objet/fonction différents.
+
+
+## Notes
+J'espère que vous aimez les closures ahah
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
