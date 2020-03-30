@@ -33,17 +33,23 @@ const HomeScreen = () => {
       <AppBar><Typography component="h2">Confined</Typography></AppBar>
 
       <View style={{ padding: 16 }}>
+    
         {vidgets.length === 0 && <EmptyListComponent />}
+    
         <Grid container justify="center" spacing={2}>
+    
           {vidgets.map((id) => (
             <GridCard key={id}>
               <VidgetProvider id={id} />
             </GridCard>
           ))}
+
           <Grid item>
             <AddCard onClick={() => setDialogOpen(true)} />
           </Grid>
+  
         </Grid>
+
       </View>
 
       <EhancedVidgetDisplayer
