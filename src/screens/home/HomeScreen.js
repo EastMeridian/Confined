@@ -45,11 +45,13 @@ const HomeScreen = () => {
           </Grid>
         </Grid>
       </View>
+
       <EhancedVidgetDisplayer
         open={dialogOpen}
         onClose={() => setDialogOpen(false)}
         onClick={buildVidget}
       />
+          
     </View>
   );
 };
