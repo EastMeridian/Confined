@@ -1,2 +1,8 @@
 # Confined
-A little serverless social network
+A small readct widgets system implementation
+
+## Usage
+
+```bash
+npm start
+```
