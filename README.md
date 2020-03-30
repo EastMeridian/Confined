@@ -72,7 +72,7 @@ export default {
 ```
 nous pouvons ajouter de nouveaux vidgets components dans vidgets/components, l'inscription est dans vidgets/componentRegister (inscription avec React.lazy);
 
-adapter est la fonction qui permet de transformer les datas reçu pour les adapter au vidget en question. Nous n'allons pas les (adapter) stocker dans le store redux mais dans un singleton: adapterManager.
+adapter est la fonction qui permet de transformer les datas reçu pour les adapter au vidget en question. Nous n'allons pas stocker les fonctions adapter dans le store redux mais dans un singleton: adapterManager.
 
 A noter que pour améliorer le coté framework, nous pourrions utiliser webpack pour aller chercher directement les entities et components dans les dossiers sans devoir les inscrire a chaque fois;
 
@@ -84,7 +84,7 @@ Les composants UI du projet, les briques UI de bases.
 A noter qu'ils peuvent importer 'styles', et de ce fait sont couplés avec ce dossier, pour un découplage optimal dans le but par example de creer une library, nous pourrions inclure styles dans component, et mieux, creer un ThemeContext.
 ### decorators
 Les decorateur du projet, a utiliser pour enrichir un component.
-Méthode un peu spéciale de composition que j'experimente depuis quelque temps.
+Une méthode de composition que j'experimente depuis quelque temps.
 ```javascript
 const EhancedComponent = withStuff(Component);
 
@@ -101,7 +101,7 @@ Les outils de création ou de rehydratation d'object du projet.
 ### flux
 Le dossier Redux du projet, décomposition en sous dossier par type.
 Branché sur un persistor pour pouvoir réhydrater le store au démarrage de l'app.
-A noter que le système de vidget a besoin d'un store externe pour les fonctions (adapterManager) et que ce store est réhydrater parallelement au store redux;
+A noter que le système de vidget a besoin d'un store externe pour les fonctions (adapterManager) et que ce store est réhydraté parallèlement au store redux;
 
 ```javascript
 // flux/vidgetTransform.js
