@@ -111,16 +111,16 @@ A noter que le système de vidget a besoin d'un store externe pour les fonctions
     return { ...outboundState, mySet: new Set(outboundState.mySet || []) };
   }
 ```
-## screens
+### screens
 Un dossier ou mettre nos screens, nos "smart component".
 
-## hooks
+### hooks
 Quelques custom hooks...
 
-## styles 
+### styles 
 Un endroit ou mettre les styles et colors commun.
 
-## utils
+### utils
 le dossier de functions utilitaires.
 
 
