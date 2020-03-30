@@ -16,7 +16,7 @@ npm start
 
 ## Le système de widgets
 L'idée ici était de proposer un (super) mini framework de création de widgets,
-pour ajouter un vidget il suffit de creer un object dans vidgets/entites/ puis de l'inscrire dans vidgets/entityRegister;
+pour ajouter un vidget il suffit de creer un object dans vidgets/entities/ puis de l'inscrire dans vidgets/entityRegister;
 
 examples de vidgets:
 
@@ -70,9 +70,9 @@ export default {
 };
 
 ```
-nous pouvons ajouter de nouveaux vidget component dans vidgets/component, l'inscription est dans vidgets/componentRegister (inscription avec React.lazy);
+nous pouvons ajouter de nouveaux vidgets components dans vidgets/components, l'inscription est dans vidgets/componentRegister (inscription avec React.lazy);
 
-adapter est la fonction qui permet de transformer les datas reçu pour les adapter au vidget en question. Nous n'allons pas les stocker dans le store redux mais dans un singleton: adapterManager.
+adapter est la fonction qui permet de transformer les datas reçu pour les adapter au vidget en question. Nous n'allons pas les (adapter) stocker dans le store redux mais dans un singleton: adapterManager.
 
 A noter que pour améliorer le coté framework, nous pourrions utiliser webpack pour aller chercher directement les entities et components dans les dossiers sans devoir les inscrire a chaque fois;
 
@@ -81,7 +81,7 @@ A noter que pour améliorer le coté framework, nous pourrions utiliser webpack 
 ### components
 Les composants UI du projet, les briques UI de bases.
 
-A noter qu'ils peuvent importer 'styles', et de ce fait sont couplés avec ce dossier, pour un découplage optimal dans le but par example de creer une libraire, nous pourrions inclure styles dans component, et mieux, creer un ThemeContext.
+A noter qu'ils peuvent importer 'styles', et de ce fait sont couplés avec ce dossier, pour un découplage optimal dans le but par example de creer une library, nous pourrions inclure styles dans component, et mieux, creer un ThemeContext.
 ### decorators
 Les decorateur du projet, a utiliser pour enrichir un component.
 Méthode un peu spéciale de composition que j'experimente depuis quelque temps.
@@ -129,7 +129,8 @@ En raison du temps limité que j'ai eu pour creer ce repo, la couverture est rel
 
 
 ## Notes
-J'espère que vous aimez les closures ahah
+J'espère que vous aimez les closures ahah.
+L'app est 100% responsive.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
